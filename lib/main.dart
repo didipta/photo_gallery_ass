@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.latoTextTheme(textTheme).copyWith(
-          bodyMedium: GoogleFonts.oswald(textStyle: textTheme.bodyMedium),
+          bodyMedium: GoogleFonts.poppins(textStyle: textTheme.bodyMedium),
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

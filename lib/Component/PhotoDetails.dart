@@ -1,21 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:photo_gallery_ass/Component/PhotoList.dart';
 import 'package:photo_gallery_ass/style/style.dart';
 
-class PhotoGallery extends StatefulWidget {
-  const PhotoGallery({Key? key}) : super(key: key);
+class PhotoDetails extends StatefulWidget {
+  final String name;
+   PhotoDetails({Key? key, required this.name}) : super(key: key);
 
   @override
-  State<PhotoGallery> createState() => _PhotoGalleryState();
+  State<PhotoDetails> createState() => _PhotoDetailsState();
 }
 
-class _PhotoGalleryState extends State<PhotoGallery> {
+class _PhotoDetailsState extends State<PhotoDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: Container(
+          width: 40,
+          height: 40,
           decoration: BoxDecoration(
             color: Color.fromRGBO(122, 202, 94,1), // Background color for the icon
             borderRadius: BorderRadius.circular(10.5), // Makes the background circular
@@ -29,7 +31,7 @@ class _PhotoGalleryState extends State<PhotoGallery> {
             },
           ),
         ),
-        title: Text("Photo Gallery", style: TextSize(context,20,25),),
+        title: Text(widget.name, style: TextSize(context,20,25),),
         backgroundColor: Colors.green,
         titleSpacing: 100,
         toolbarHeight: 60,
@@ -43,7 +45,6 @@ class _PhotoGalleryState extends State<PhotoGallery> {
         ],
 
       ),
-      body: PhotoList(),
     );
   }
 }
