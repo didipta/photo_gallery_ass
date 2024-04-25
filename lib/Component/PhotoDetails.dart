@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_gallery_ass/Component/Detailsshow.dart';
 import 'package:photo_gallery_ass/Fakedata/data.dart';
 import 'package:photo_gallery_ass/style/style.dart';
 import 'package:photo_gallery_ass/utils/commonfunction.dart';
@@ -14,16 +15,20 @@ class PhotoDetails extends StatefulWidget {
 
 class _PhotoDetailsState extends State<PhotoDetails> {
   Map<String, dynamic>? photoDetails;
+  List<Map<String, dynamic>>? suggestions ;
 
   @override
   void initState(){
     super.initState();
     photoDetails=getPhotoDetails(widget.name);
+    suggestions=filterphoto(widget.name);
   }
 
   @override
   Widget build(BuildContext context) {
+
     var width=MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         leading: Container(
@@ -61,13 +66,23 @@ class _PhotoDetailsState extends State<PhotoDetails> {
           child: Text("No details available"),
         ):SingleChildScrollView(
           child: Column(
+            crossAxisAlignment:CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              width==650?
-              Column(
+              Container(
+                child: width < 650 ?
+                Column(
+                  crossAxisAlignment:CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
 
-              ):Row(
+                  children: DetailsShow(photoDetails,width,suggestions),
+                ):Row(
+                  crossAxisAlignment:CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: DetailsShow(photoDetails,width,suggestions),
+                ),
+              )
 
-              ),
 
             ],
           )

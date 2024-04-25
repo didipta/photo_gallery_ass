@@ -1,6 +1,6 @@
 final List<Map<String, dynamic>> fakedata=[
 
-{"id": 3, "name": "Mountain Peak", "img": "https://images.unsplash.com/photo-1600476020549-7291c53b0f0e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWluJTIwcGVha3xlbnwwfHwwfHx8MA%3D%3D", "des": "Snow-covered peaks towering above the clouds."},
+{"id": 3, "name": "Mountain Peak", "img": "https://images.unsplash.com/photo-1600476020549-7291c53b0f0e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWluJTIwcGVha3xlbnwwfHwwfHx8MA%3D%3D", "des": "Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress and increases pleasant feelings"},
 {"id": 4, "name": "Ocean Wave", "img": "https://t4.ftcdn.net/jpg/02/19/15/89/360_F_219158969_kv2s7REq6A7arX6n9TX6tt6H9g7uujYU.jpg", "des": "A powerful wave captured at the moment of cresting."},
 {"id": 5, "name": "Green Forest", "img": "https://thumbs.dreamstime.com/b/summer-sunny-forest-trees-green-grass-nature-wood-sunlight-background-instant-toned-image-53353502.jpg", "des": "A dense green forest, full of ancient trees."},
 {"id": 6, "name": "Sandy Beach", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7IorXOE7XWt_Y14_NwjJ6crigzhTg8OU1aO9NUpkfQ&s", "des": "A serene sandy beach with calm waters."},

@@ -6,3 +6,7 @@ Map<String, dynamic>? getPhotoDetails(String name) {
 
   );
 }
+
+List<Map<String, dynamic>> filterphoto(String name){
+  return fakedata.where((element) => element['name']!=name).toList();
+}

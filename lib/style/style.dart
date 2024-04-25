@@ -19,7 +19,7 @@ TextStyle TextSize(context){
   }else{
     return TextStyle(
         color:Colors.white,
-        fontSize: 25,
+        fontSize: 21,
         fontWeight: FontWeight.w700
     );
   }
