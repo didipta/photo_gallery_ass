@@ -11,9 +11,10 @@ class PhotoList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width=MediaQuery.of(context).size.width;
     return   ResponsiveGridList(
-      horizontalGridMargin: 30,
-      verticalGridMargin: 30,
+      horizontalGridMargin: 20,
+      verticalGridMargin: 20,
       minItemWidth: 180,
       horizontalGridSpacing: 30,
       verticalGridSpacing: 30,
@@ -32,7 +33,7 @@ class PhotoList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),  // Adds rounded corners to the container
                 boxShadow: [
                   BoxShadow(
-                  color: Color(0x80000000),
+                  color: Color(0x60000000),
                  blurRadius: 30.0,
                 offset: Offset(0, 15),
                )
