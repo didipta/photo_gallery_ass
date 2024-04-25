@@ -6,7 +6,8 @@ import 'package:photo_gallery_ass/style/style.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
 
 class PhotoList extends StatelessWidget {
-  const PhotoList({Key? key}) : super(key: key);
+  final List<Map<String, dynamic>> fakedata;
+  PhotoList({Key? key, required this.fakedata}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +63,7 @@ class PhotoList extends StatelessWidget {
                           // Semi-transparent black background for the text
                         child: Text(
                           item["name"],  // The text you want to show
-                          style: TextSize(context,18,20),
+                          style: TextSize(context),
                           textAlign: TextAlign.start,
                           maxLines: 1,
 

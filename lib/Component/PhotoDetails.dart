@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_gallery_ass/Fakedata/data.dart';
 import 'package:photo_gallery_ass/style/style.dart';
+import 'package:photo_gallery_ass/utils/commonfunction.dart';
 
 class PhotoDetails extends StatefulWidget {
   final String name;
@@ -11,8 +13,17 @@ class PhotoDetails extends StatefulWidget {
 }
 
 class _PhotoDetailsState extends State<PhotoDetails> {
+  Map<String, dynamic>? photoDetails;
+
+  @override
+  void initState(){
+    super.initState();
+    photoDetails=getPhotoDetails(widget.name);
+  }
+
   @override
   Widget build(BuildContext context) {
+    var width=MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         leading: Container(
@@ -31,7 +42,7 @@ class _PhotoDetailsState extends State<PhotoDetails> {
             },
           ),
         ),
-        title: Text(widget.name, style: TextSize(context,20,25),),
+        title: Text(widget.name, style: TextSize(context),),
         backgroundColor: Colors.green,
         titleSpacing: 100,
         toolbarHeight: 60,
@@ -44,6 +55,23 @@ class _PhotoDetailsState extends State<PhotoDetails> {
           IconButton(onPressed: (){}, icon:Icon(Icons.more_vert,color:Colors.white ))
         ],
 
+      ),
+      body:Container(
+        child: photoDetails==null? Center(
+          child: Text("No details available"),
+        ):SingleChildScrollView(
+          child: Column(
+            children: [
+              width==650?
+              Column(
+
+              ):Row(
+
+              ),
+
+            ],
+          )
+        ),
       ),
     );
   }

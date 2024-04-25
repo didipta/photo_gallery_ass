@@ -1,16 +1,17 @@
+
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-TextStyle TextSize(context,size,size2){
+TextStyle TextSize(context){
   var width=MediaQuery.of(context).size.width;
 
   if(width<650){
    return TextStyle(
 
      color:Colors.white,
-     fontSize: size,
+     fontSize: 20,
      fontWeight: FontWeight.w700,
 
 
@@ -18,7 +19,7 @@ TextStyle TextSize(context,size,size2){
   }else{
     return TextStyle(
         color:Colors.white,
-        fontSize: size2,
+        fontSize: 25,
         fontWeight: FontWeight.w700
     );
   }

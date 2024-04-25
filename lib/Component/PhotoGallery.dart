@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_gallery_ass/Component/PhotoList.dart';
+import 'package:photo_gallery_ass/Fakedata/data.dart';
 import 'package:photo_gallery_ass/style/style.dart';
 
 class PhotoGallery extends StatefulWidget {
@@ -29,7 +30,7 @@ class _PhotoGalleryState extends State<PhotoGallery> {
             },
           ),
         ),
-        title: Text("Photo Gallery", style: TextSize(context,20,25),),
+        title: Text("Photo Gallery", style: TextSize(context),),
         backgroundColor: Colors.green,
         titleSpacing: 100,
         toolbarHeight: 60,
@@ -43,7 +44,7 @@ class _PhotoGalleryState extends State<PhotoGallery> {
         ],
 
       ),
-      body: PhotoList(),
+      body: PhotoList(fakedata: fakedata,),
     );
   }
 }
