@@ -14,7 +14,7 @@ List<Widget> DetailsShow(Map<String, dynamic>? item,width,List<Map<String, dynam
        decoration: BoxDecoration(
          boxShadow: [
            BoxShadow(
-             color: Color(0x30000000), // #00000080 in CSS
+             color: Color(0x50000000), // #00000080 in CSS
              offset: Offset(5.0, 5.0), // x, y offset in CSS
              blurRadius: 50.0, // blur radius
              spreadRadius: 0.0, // spread radius
