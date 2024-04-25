@@ -62,6 +62,7 @@ class _PhotoDetailsState extends State<PhotoDetails> {
 
       ),
       body:Container(
+
         child: photoDetails==null? Center(
           child: Text("No details available"),
         ):SingleChildScrollView(
@@ -70,6 +71,7 @@ class _PhotoDetailsState extends State<PhotoDetails> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
+
                 child: width < 650 ?
                 Column(
                   crossAxisAlignment:CrossAxisAlignment.start,

@@ -22,7 +22,7 @@ List<Widget> DetailsShow(Map<String, dynamic>? item,width,List<Map<String, dynam
          ],
          borderRadius: BorderRadius.circular(30.0), // Set the border radius of the container
        ),
-       padding: EdgeInsets.all(10),
+       padding: EdgeInsets.all(15),
        margin: EdgeInsets.all(0),
        height: 325,
        child: ClipRRect(
@@ -45,7 +45,7 @@ List<Widget> DetailsShow(Map<String, dynamic>? item,width,List<Map<String, dynam
 
  Textcontiner(name,des,width,suggestions){
   return Container(
-  padding: EdgeInsets.all(20),
+  padding: EdgeInsets.all(25),
  child: Column(
 
  crossAxisAlignment:CrossAxisAlignment.start,
