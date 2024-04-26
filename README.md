@@ -6,7 +6,7 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-![photo_gallery (4)](https://github.com/didipta/photo_gallery_ass/assets/66532706/fcd29ee5-9b27-4095-b3e8-0118d63e20d1)
-![photo_gallery (3)](https://github.com/didipta/photo_gallery_ass/assets/66532706/308da658-d62b-44da-b066-c6bbfcbe0dbd)
-![photo_gallery (2)](https://github.com/didipta/photo_gallery_ass/assets/66532706/15f30019-1803-43bf-badd-7ffd2fa3413f)
-![photo_gallery (1)](https://github.com/didipta/photo_gallery_ass/assets/66532706/98c7f165-b3f3-44c5-958c-e8c77b26757a)
+![photo_gallery](https://github.com/didipta/photo_gallery_ass/assets/66532706/95a36d3c-2cd1-42fb-9674-8fb77ce45e39)
+![photo_gallery (1)](https://github.com/didipta/photo_gallery_ass/assets/66532706/25a4adb7-1b7b-49c3-83e0-50e47ad78ddd)
+![photo_gallery (4)](https://github.com/didipta/photo_gallery_ass/assets/66532706/531c0bd4-1699-45e3-a65f-bca4693364e3)
+![photo_gallery (3)](https://github.com/didipta/photo_gallery_ass/assets/66532706/fa9f2b6a-e6a1-4b10-bc7b-13d2c685f878)
