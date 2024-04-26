@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_gallery_ass/Component/PhotoList.dart';
@@ -43,6 +41,9 @@ List<Widget> DetailsShow(Map<String, dynamic>? item,width,List<Map<String, dynam
  }
 
 
+
+
+
  Textcontiner(name,des,width,suggestions){
   return Container(
   padding: EdgeInsets.all(25),
@@ -76,7 +77,7 @@ List<Widget> DetailsShow(Map<String, dynamic>? item,width,List<Map<String, dynam
        style: ElevatedButton.styleFrom(
          primary: Color.fromRGBO(44, 171, 0, 1), // Background color
          onPrimary: Colors.white, // Text color (Foreground color)
-         elevation: 5, // Shadow elevation
+         elevation:10 , // Shadow elevation
          shape: RoundedRectangleBorder( // Rounded corners
            borderRadius: BorderRadius.circular(30.0),
          ),
